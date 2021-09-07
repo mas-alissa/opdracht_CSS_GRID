@@ -1,0 +1,83 @@
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 500px 200px 100px;
+}
+.site-header {
+  background-color: cornflowerblue;
+  color: white;
+}
+.site-main {
+  background-color: green;
+  color: white;
+}
+.widget-area {
+  background-color: rgb(211, 134, 147);
+  color: white;
+}
+.site-footer {
+  background-color: blue;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 60% 30% 10%;
+    height: 80vh;
+  }
+  .site-header {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: cornflowerblue;
+    color: white;
+  }
+  .site-main {
+    background-color: green;
+    color: white;
+  }
+  .widget-area {
+    background-color: rgb(211, 134, 147);
+    color: white;
+  }
+  .site-footer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: blue;
+    color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 90% 10%;
+    height: 80vh;
+  }
+  .site-header {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: cornflowerblue;
+    color: white;
+  }
+  .site-main {
+    background-color: green;
+    color: white;
+  }
+  .widget-area {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rgb(211, 134, 147);
+    color: white;
+  }
+  .site-footer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: blue;
+    color: white;
+  }
+}
